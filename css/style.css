@@ -1,0 +1,235 @@
+@import url('reset.css');
+
+body{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+:root{
+  --pri-color: #c30d22;
+}
+
+.block-title{
+  color: #999;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.add-new{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  right: 30px;
+  bottom: 50px;
+  line-height: 1;
+  font-size: 32px;
+  z-index: 100;
+  background-color: var(--pri-color);
+  color: white;
+  border-radius: 50%;
+}
+
+/* ------------------- Header ------------------- */
+header{
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 3px 5px rgba(0,0,0,.2);
+  z-index: 9999;
+}
+
+header img{
+  height: 40px;
+}
+
+header i{
+  font-size: 24px;
+}
+
+/* ------------------- Main ------------------- */
+main{
+  padding: 10px;
+  margin-top: 70px;
+}
+
+.event-ad{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 250px;
+  position: relative;
+  color: white;
+  background-image: linear-gradient(rgba(0,0,0,.7), transparent), url(../img/event.jpg);
+  background-size: cover;
+  text-decoration: none;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.event-ad i{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  font-size: 24px;
+  text-shadow: 0 0 3px black;
+  opacity: .5;
+}
+
+.event-ad h3{
+  font-size: 24px;
+  font-weight: 600;
+  text-shadow: 0 0 3px black;
+}
+
+.event-ad p{
+  font-size: 13px;
+}
+
+/* ------------------- Top Albums ------------------- */
+.top-albums{
+  margin-bottom: 20px;
+}
+
+.top-albums ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.top-albums li{
+  flex-basis: calc(50% - 5px);
+  margin-bottom: 10px;
+}
+
+.top-albums a{
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  border: 1px solid #e5e5e5;
+  padding: 5px;
+  align-items: center;
+  font-size: 13px;
+}
+
+.top-albums img{
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.top-albums a:hover{
+  background-color: var(--pri-color);
+  color: white;
+  border-color: var(--pri-color);
+}
+
+/* ------------------- List Items ------------------- */
+.item{
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.item a{
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.item-cover{
+  position: relative;
+}
+
+.item-cover i{
+  position: absolute;
+  font-size: 62px;
+  color: var(--pri-color);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 3px rgba(0,0,0,.5);
+}
+
+.item-cover img{
+  display: block;
+  width: 100%;
+}
+
+.item h2{
+  margin: 10px;
+  padding-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.item-user{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.item-user img{
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.item-user h3{
+  font-weight: 600;
+}
+
+.item-user span{
+  margin-left: auto;
+  color: #ccc;
+  font-size: 13px;
+}
+
+.item-des{
+  padding: 10px;
+}
+
+.item-des p{
+  color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
