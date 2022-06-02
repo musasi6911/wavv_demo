@@ -49,7 +49,6 @@ header{
   left: 0;
   top: 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   box-shadow: 0 3px 5px rgba(0,0,0,.2);
@@ -57,11 +56,17 @@ header{
 }
 
 header img{
+  display: block;
   height: 40px;
 }
 
 header i{
   font-size: 24px;
+}
+
+header i:first-of-type{
+  margin-left: auto;
+  margin-right: 30px;
 }
 
 /* ------------------- Main ------------------- */
@@ -148,6 +153,7 @@ main{
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 20px;
+  background-color: #fff;
 }
 
 .item a{
@@ -313,6 +319,34 @@ main{
 
 .con-btns b{
   font-size: 13px;
+}
+
+/* Current Price */
+.con-price{
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.con-price h2{
+  flex-basis: 100%;
+}
+
+.con-price i{
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+.con-price p{
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+.con-price span{
+  color: #999;
+  margin-left: auto;
 }
 
 /* buy button */
